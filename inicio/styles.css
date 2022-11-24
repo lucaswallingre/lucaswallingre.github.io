@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.ver-carrito{
+    cursor: pointer;
+    right: 100px; 
+    margin-top: -4rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+body {
+    background: #01233f;
+}
+
+nav {
+    background: #021222;
+    height: 5rem;
+    /* position: relative; */
+}
+
+.container {
+    margin: left;
+    display: flex;
+    max-width: 100%;
+    line-height: 5rem;
+    z-index: 100;
+
+}
+
+.container-logo {
+    margin-left: 1.25rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.container-logo h2 {
+    color: #95bdd8;
+    /* font-weight: 300; */
+    font-size: 2.1875rem;
+    letter-spacing: 2px;
+    margin-right: 11rem;
+}
+
+.container-logo h2 span {
+    color: #0590ec;
+    font-weight: 700;
+}
+
+.links .link {
+    display: inline-block;
+    justify-content: center;
+}
+
+.links .link a {
+    justify-content: center;
+    text-decoration: none;
+    color: #d1faf4;
+    font-size: 1.25rem;
+    margin: 0 1.25rem;
+    letter-spacing: 3px;
+    transition: .3s;
+
+}
+
+.links .link a:hover {
+    color: #487abb;
+}
+
+.toggle {
+    color: #d1faf4;
+    margin-right: 1.25rem;
+    font-size: 1,875rem;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 50rem){
+    .toggle {
+        display: inline-block;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #021222;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 5rem);
+        width: 100%;
+        z-index: 1;
+        top: -100vh;
+        transition: .5s;
+    }
+
+    .active {
+        top: 5rem;
+    }
+
+    .links .link:hover {
+        background: #051c38;
+    }
+}
+/* .buscador {
+    margin-top:.5rem
+    
+} */
+
+
+
+/* carrusel */
+*{
+    margin: 80;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+width: 100%;
+height: 50rem;
+overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}

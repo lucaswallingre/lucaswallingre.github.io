@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="productos/styles.css" />
+    <link rel="stylesheet" href="productos/spiner.css" />
     <title>Proyecto Wallingre</title>
-    <link rel="stylesheet" href="compra/styles.css">
-</head>
-<body>
-<!-- navbar -->
-    <nav>
-        <div class="container">
-            <div class="container-logo">
-                <h2><span>Reloj</span>Wallingre<span>.</span></h2>
-            </div>
-            <ul class="links ">
-                <li class="link"><a href="index.html">Inicio</a></li>
-                <li class="link"><a href="productos.html">Productos</a></li>
-                <li class="link"><a href="#">Contactos</a></li>
-            </ul>
-            <!-- <h1 class="ver-carrito" id="verCarrito">🛒</h1> -->
-            <div class="toggle">
-                |||
-            <!-- </div>
-            <form class="flex" role="search">
-            <input class="buscador" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="boton" type="submit">Buscar</button>
-        </div> -->
-    </nav>
-    
-    <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidadCarrito"></span></h1>
-<!-- shop content -->
-<div id="shopContent" class="shop-content"></div>
+  </head>
+  <body>
+  <!-- navbar -->
+  <nav>
+    <div class="container">
+        <div class="container-logo">
+            <h2><span>Reloj</span>Wallingre<span>.</span></h2>
+        </div>
+        <ul class="links ">
+            <li class="link"><a href="index.html">Inicio</a></li>
+            <li class="link"><a href="productos.html">Productos</a></li>
+            <li class="link"><a href="#">Contactos</a></li>
+        </ul>
+        <div class="toggle">
+            |||
+        <!-- </div>
+        <form class="flex" role="search">
+        <input class="buscador" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="boton" type="submit">Buscar</button>
+    </div> -->
+</nav>
 
-<!-- modal -->
-<div id="modal-conteiner" class="modal-conteiner"></div>
+<h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+</nav>
 
+    <!--shop content-->
+    <div id="shopContent" class="shop-content"></div>
 
-<br></br>
+    <!--modal container-->
+    <div id="modal-container" class="modal-container"></div>
+
+    <br></br>
 <h5 style="color:rgba(98, 95, 95, 0.861)">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nulla impedit error odit facilis quia, quasi autem. Officiis fuga, accusamus at excepturi, nemo labore odio doloremque dolorum totam nulla dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit aliquam omnis non cum consequatur, sint cupiditate tempora fugiat, maiores accusantium alias iusto incidunt laboriosam animi praesentium quidem? Inventore, quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse. Laboriosam deserunt, autem sapiente nobis nam soluta ab explicabo quisquam ea laborum libero doloribus veniam! Necessitatibus saepe itaque earum dolores?</h5>
+  
 
 
-<script src="compra/main.js"></script>
-<script src="compra/carrito.js"></script>
-<script src="compra/stock.js"></script>
-<script src="compra/app.js"></script>
-</body>
+    <script src="productos/products.js"></script>
+    <script src="productos/app.js"></script>
+    <script src="productos/carrito.js"></script>
+    <script src="productos/realizarCompra.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  </body>
 </html>
